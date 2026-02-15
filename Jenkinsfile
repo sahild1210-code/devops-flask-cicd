@@ -1,19 +1,14 @@
-pipeline {
-    agent any
+stage('Install Dependencies') {
+    steps {
+        bat '''
+        python -m venv venv
+        venv\\Scripts\\pip install -r requirements.txt
+        '''
+    }
+}
 
-    stages {
-
-        stage('Install Dependencies') {
-            steps {
-                bat 'python --version'
-                bat 'python -m pip install -r requirements.txt'
-            }
-        }
-
-        stage('Run Application') {
-            steps {
-                bat 'python app.py'
-            }
-        }
+stage('Run Application') {
+    steps {
+        bat 'venv\\Scripts\\python app.py'
     }
 }
