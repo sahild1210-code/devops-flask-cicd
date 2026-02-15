@@ -19,4 +19,4 @@ Whenever code is pushed to GitHub, Jenkins:
 2️⃣ Installs dependencies
 3️⃣ Runs the Flask app automatically
 
-![Project logo](project.png)
+![Project logo](C:\Users\Ruchita\OneDrive\Pictures\Screenshots\project.png.png)
