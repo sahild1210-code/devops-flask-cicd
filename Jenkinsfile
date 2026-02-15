@@ -1,14 +1,13 @@
-stage('Install Dependencies') {
-    steps {
-        bat '''
+node {
+
+    stage('Install Dependencies') {
+        bat """
         python -m venv venv
         venv\\Scripts\\pip install -r requirements.txt
-        '''
+        """
     }
-}
 
-stage('Run Application') {
-    steps {
-        bat 'venv\\Scripts\\python app.py'
+    stage('Run Application') {
+        bat "venv\\Scripts\\python app.py"
     }
 }
