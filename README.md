@@ -18,3 +18,5 @@ Whenever code is pushed to GitHub, Jenkins:
 1️⃣ Pulls latest code
 2️⃣ Installs dependencies
 3️⃣ Runs the Flask app automatically
+
+![Project logo](project.png)
