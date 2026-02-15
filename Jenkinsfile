@@ -6,7 +6,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/YOUR_USERNAME/devops-flask-cicd.git'
+                    url: 'https://github.com/sahild1210-code/devops-flask-cicd.git'
             }
         }
 
